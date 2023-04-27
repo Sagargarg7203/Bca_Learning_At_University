@@ -3,5 +3,16 @@
 
 int main()
 {
+  int r,i,binary=0,pr=1;
+	printf("Enter a number in decimal: ");
+	scanf("%d",&i);
+	while(i!=0)
+	{
+		r=i%2;
+		binary=binary+(pr*r);
+		pr=pr*10;
+		i=i/2;
+	}
+	printf("Binary of the number is: %d",binary);
   return 0;
 }
