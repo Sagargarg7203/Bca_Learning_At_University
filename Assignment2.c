@@ -2,6 +2,14 @@
 
 int main() 
 {
-  
+  int i,count=0;
+	printf("Enter a number: ");
+	scanf("%d",&i);
+	while(i%8==0)
+	{
+		scanf("%d",&i);
+		count+=1;
+	}
+	printf("number divisible by 8 are :%d",count);
   return 0;
 }
