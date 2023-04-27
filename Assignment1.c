@@ -2,6 +2,22 @@
 
 int main()
 {
-  //add your code here
-  return 0;ftgf
+	int i,p=0,n=0,j,s;
+	printf("Enter a number of inputs: ");
+	scanf("%d",&j);
+	for(i=0;i<j;i++)
+	{
+		scanf("%d",&s);
+		if(s>0)
+		{
+			p+=1;
+		}
+		else
+		{
+			n+=1;
+		}
+	}
+	printf("Number of positive number are: %d\n",p);
+	printf("Number of negative number are: %d",n);
+  return 0;
 }
